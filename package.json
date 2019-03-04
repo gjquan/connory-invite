@@ -1,0 +1,12 @@
+{
+  "name": "connory-invite",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "bin/build.sh"
+  },
+  "devDependencies": {
+    "cerberus-email": "^3.0.5",
+    "gulp": "^4.0.0",
+    "gulp-htmlmin": "^5.0.1"
+  }
+}
