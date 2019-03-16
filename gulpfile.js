@@ -6,7 +6,8 @@ gulp.task('minify', () => {
     .pipe(htmlmin({
     	collapseWhitespace: true,
     	minifyCSS: true,
-    	minifyJS: true
+        minifyJS: true,
+        removeComments: true
     }))
     .pipe(gulp.dest('dist'));
 });

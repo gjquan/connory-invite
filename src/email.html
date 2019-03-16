@@ -161,14 +161,22 @@
 
 	    /* Media Queries */
 	    @media screen and (max-width: 600px) {
+            .hero,
+            .header {
+                padding: 0 20px !important;
+            }
 
-	        /* What it does: Adjust typography on small screens to improve readability */
-	        .email-container p {
-	            font-size: 17px !important;
-	        }
+            .hero {
+                padding-bottom: 15px !important;
+            }
 
-            .subtitle br {
+            .subtitle br,
+            .hyphen {
                 display: none !important;
+            }
+
+            .location-break {
+                display: initial !important;
             }
 	    }
     </style>
@@ -218,12 +226,12 @@
 	        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
 		        <!-- Email Header : BEGIN -->
                 <tr>
-                    <td style="background-color: #ffffff; text-transform: uppercase; font-family: 'Amatic SC', cursive; color: #283429; padding: 0 150px; padding-top: 35px;">
+                    <td style="background-color: #ffffff; text-transform: uppercase; font-family: 'Amatic SC', cursive; color: #283429; padding: 0 150px; padding-top: 35px;" class="header">
                         <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr height="48">
-                                <td style="text-align: left; padding-left: 3px;"><h1 style="font-size: 48px; margin: 0; height: 54px;">Connie</h1></td>
+                                <td style="text-align: left; padding-left: 2px;"><h1 style="font-size: 48px; margin: 0; height: 54px;">Connie</h1></td>
                                 <td valign="middle" style="text-align: center; font-size: 32px; height: 54px;" width="50">&amp;</td>
-                                <td style="text-align: right; padding-right: 3px;"><h1 style="font-size: 48px; margin: 0; height: 54px;">Gregory</h1></td>
+                                <td style="text-align: right; padding-right: 2px;"><h1 style="font-size: 48px; margin: 0; height: 54px;">Gregory</h1></td>
                             </tr>
                             <tr>
                                 <td style="text-align: left; font-size: 16px;">Co</td>
@@ -237,7 +245,7 @@
 
                 <!-- Hero Image, Flush : BEGIN -->
                 <tr>
-                    <td style="background-color: #ffffff;  padding: 0 120px 5px;">
+                    <td style="background-color: #ffffff;  padding: 0 120px 5px;" class="hero">
                         <img src="images/connory-drawing.jpg" width="600" height="" alt="Illustration of Connie and Greg" border="0" style="width: 100%; max-width: 600px; height: auto; background: #ffffff; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #283429; margin: auto; display: block;" class="g-img">
                     </td>
                 </tr>
@@ -254,12 +262,22 @@
                             </tr>
                             <tr>
                                 <td style="padding: 0 20px; text-align: center;">
-                                    <hr style="margin: 20px 0;"/>
-                                    <h2 style="font-size: 36px; font-family: 'Amatic SC', cursive; color: #283429; margin: 20px 0;">Sunday, September 29, 2019</h2>
-                                    <h3 style="font-family: 'Andale Mono', 'Courier New', Courier, monospace; font-size: 14px; color: #4d4940;">Ceremony @ 3:00 pm<br>Roberts Park<span class="hyphen"> - </span>Oakland, California</h3>
-                                    <h3 style="font-family: 'Andale Mono', 'Courier New', Courier, monospace; font-size: 14px; color: #4d4940;">Reception @ 5:30 pm<br>Brazilian Room<span class="hyphen"> - </span>Berkeley, California</h3>
+                                    <img src="images/heart-line.png" width="400" height="" alt="" border="0" style="width: 130px; max-width: 130px; height: auto; background: #ffffff; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #283429; margin: 15px auto; display: block;" class="g-img">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0 20px; text-align: center;">
+                                    <hr style="margin: 20px 0; display: none;"/>
+                                    <h2 style="font-size: 36px; font-family: 'Amatic SC', cursive; color: #283429; margin: 0 0 20px;">Sunday, September 29, 2019</h2>
+                                    <h3 style="font-family: 'Andale Mono', 'Courier New', Courier, monospace; font-size: 14px; color: #4d4940;">Ceremony @ 3:00 pm<br>Roberts Park<br class="location-break" style="display: none;"><span class="hyphen"> - </span>Oakland, California</h3>
+                                    <h3 style="font-family: 'Andale Mono', 'Courier New', Courier, monospace; font-size: 14px; color: #4d4940;">Reception @ 5:30 pm<br>Brazilian Room<br class="location-break" style="display: none;"><span class="hyphen"> - </span>Berkeley, California</h3>
                                     <p style="margin: 0; font-family: 'Andale Mono', 'Courier New', Courier, monospace; font-size: 14px; color: #4d4940;">More information at <a class="card-link" style="text-decoration: underline; color: #827268;" href="http://www.connoryeverafter.com">www.connoryeverafter.com</a></p>
-                                    <hr style="margin: 20px 0;"/>
+                                    <hr style="margin: 20px 0; display: none;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0 20px; text-align: center;">
+                                    <img src="images/heart-line.png" width="400" height="" alt="" border="0" style="width: 130px; max-width: 130px; height: auto; background: #ffffff; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #283429; margin: 15px auto; display: block;" class="g-img">
                                 </td>
                             </tr>
                             <tr>
