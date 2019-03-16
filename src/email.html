@@ -146,14 +146,18 @@
 
 	    /* What it does: Hover styles for buttons */
 	    .button-td,
-	    .button-a {
+	    .button-a,
+        a {
 	        transition: all 100ms ease-in;
 	    }
 	    .button-td-primary:hover,
 	    .button-a-primary:hover {
-	        background: #555555 !important;
-	        border-color: #555555 !important;
+	        background: #3e4e40 !important;
+	        border-color: #3e4e40 !important;
 	    }
+        .card-link:hover {
+            color: #3e4e40 !important;
+        }
 
 	    /* Media Queries */
 	    @media screen and (max-width: 600px) {
@@ -163,7 +167,9 @@
 	            font-size: 17px !important;
 	        }
 
-            .subtitle br { display: none; }
+            .subtitle br {
+                display: none !important;
+            }
 	    }
     </style>
     <!-- Progressive Enhancements : END -->
@@ -212,12 +218,12 @@
 	        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
 		        <!-- Email Header : BEGIN -->
                 <tr>
-                    <td style="background-color: #ffffff; text-transform: uppercase; font-family: 'Amatic SC', cursive; color: #283429; padding: 0 150px; padding-top: 20px;">
+                    <td style="background-color: #ffffff; text-transform: uppercase; font-family: 'Amatic SC', cursive; color: #283429; padding: 0 150px; padding-top: 40px;">
                         <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                                <td style="text-align: left; padding-left: 3px;"><h1 style="font-size: 48px; margin: 0;">Connie</h1></td>
-                                <td valign="middle" style="text-align: center; font-size: 32px;" width="50">&amp;</td>
-                                <td style="text-align: right; padding-right: 3px;"><h1 style="font-size: 48px; margin: 0;">Gregory</h1></td>
+                            <tr height="48">
+                                <td style="text-align: left; padding-left: 3px;"><h1 style="font-size: 48px; margin: 0; height: 54px;">Connie</h1></td>
+                                <td valign="middle" style="text-align: center; font-size: 32px; height: 54px;" width="50">&amp;</td>
+                                <td style="text-align: right; padding-right: 3px;"><h1 style="font-size: 48px; margin: 0; height: 54px;">Gregory</h1></td>
                             </tr>
                             <tr>
                                 <td style="text-align: left; font-size: 16px;">Co</td>
@@ -247,22 +253,22 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td style="padding: 0 150px; text-align: center;">
+                                <td style="padding: 0 20px; text-align: center;">
                                     <hr style="margin: 20px 0;"/>
-                                    <h2 style="font-size: 48px; font-family: 'Amatic SC', cursive; color: #283429;">Sunday, September 29, 2019</h2>
-                                    <h3 style="font-family: 'Andale Mono', 'Courier New', Courier, monospace; color: #4d4940;">Ceremony @ 3:00 PM<br>Roberts Park<span class="hyphen"> - </span>Oakland, California</h3>
-                                    <h3 style="font-family: 'Andale Mono', 'Courier New', Courier, monospace; color: #4d4940;">Reception @ 5:30 PM<br>Brazilian Room<span class="hyphen"> - </span>Berkeley, California</h3>
-                                    <p style="margin: 0; font-family: 'Andale Mono', 'Courier New', Courier, monospace; color: #4d4940;">More information at <a style="text-decoration: underline;" href="http://www.connoryeverafter.com">www.connoryeverafter.com</a></p>
+                                    <h2 style="font-size: 36px; font-family: 'Amatic SC', cursive; color: #283429; margin: 20px 0;">Sunday, September 29, 2019</h2>
+                                    <h3 style="font-family: 'Andale Mono', 'Courier New', Courier, monospace; font-size: 14px; color: #4d4940;">Ceremony @ 3:00 PM<br>Roberts Park<span class="hyphen"> - </span>Oakland, California</h3>
+                                    <h3 style="font-family: 'Andale Mono', 'Courier New', Courier, monospace; font-size: 14px; color: #4d4940;">Reception @ 5:30 PM<br>Brazilian Room<span class="hyphen"> - </span>Berkeley, California</h3>
+                                    <p style="margin: 0; font-family: 'Andale Mono', 'Courier New', Courier, monospace; font-size: 14px; color: #4d4940;">More information at <a class="card-link" style="text-decoration: underline; color: #827268;" href="http://www.connoryeverafter.com">www.connoryeverafter.com</a></p>
                                     <hr style="margin: 20px 0;"/>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="padding: 0 20px 20px;">
+                                <td style="padding: 0 20px 40px;">
                                     <!-- Button : BEGIN -->
                                     <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
                                         <tr>
-                                            <td class="button-td button-td-primary" style="border-radius: 4px; background: #222222;">
-											     <a class="button-a button-a-primary" href="https://google.com/" style="background: #222222; border: 1px solid #000000; font-family: 'Andale Mono', 'Courier New', Courier, monospace; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">RSVP by May 15</a>
+                                            <td class="button-td button-td-primary" style="border-radius: 4px; background: #827268;">
+											     <a class="button-a button-a-primary" href="https://google.com/" style="background: #827268; border: 1px solid #4d4940; font-family: 'Andale Mono', 'Courier New', Courier, monospace; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">RSVP by May 15</a>
 											</td>
                                         </tr>
                                     </table>
@@ -280,7 +286,7 @@
 	        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
                 <tr>
                     <td style="padding: 20px; font-family: sans-serif; font-size: 12px; line-height: 15px; text-align: center; color: #888888;">
-                        <webversion style="color: #cccccc; text-decoration: underline; font-weight: bold;">View as a Web Page</webversion>
+                        <webversion style="text-decoration: underline; font-weight: bold;"><a style="color: #b7b6b2;" href="">View as a Web Page</a></webversion>
                     </td>
                 </tr>
             </table>
