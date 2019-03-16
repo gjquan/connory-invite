@@ -21,7 +21,7 @@
 
     <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
     <!--[if !mso]><!-->
-    <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'> -->
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
     <!--<![endif]-->
 
     <!-- Web Font / @font-face : END -->
@@ -163,22 +163,22 @@
 	            font-size: 17px !important;
 	        }
 
+            .subtitle br { display: none; }
 	    }
-
     </style>
     <!-- Progressive Enhancements : END -->
 
 </head>
 <!--
-	The email background color (#fffff0) is defined in three places:
+	The email background color (#68826b) is defined in three places:
 	1. body tag: for most email clients
 	2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
 	3. mso conditional: For Windows 10 Mail
 -->
-<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #fffff0;">
-	<center style="width: 100%; background-color: #fffff0;">
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #68826b;">
+	<center style="width: 100%; background-color: #68826b;">
     <!--[if mso | IE]>
-    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #fffff0;">
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #68826b;">
     <tr>
     <td>
     <![endif]-->
@@ -212,15 +212,15 @@
 	        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
 		        <!-- Email Header : BEGIN -->
 	            <tr>
-	                <td style="background-color: #ffffff; padding: 20px 0; text-align: center; text-transform: lowercase; font-family: 'Amatic SC', cursive; color: #283429;">
-	                    <h1>Connie &amp; Gregory</h1>
+	                <td style="background-color: #ffffff; text-align: center; text-transform: uppercase; font-family: 'Amatic SC', cursive; color: #283429; padding: 0 120px;">
+	                    <h1 style="font-size: 48px;">Connie &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp; <span style="font-size:32px;">&amp;</span> &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp; Gregory</h1>
 	                </td>
 	            </tr>
 		        <!-- Email Header : END -->
 
                 <!-- Hero Image, Flush : BEGIN -->
                 <tr>
-                    <td style="background-color: #ffffff;">
+                    <td style="background-color: #ffffff;  padding: 20px 120px;">
                         <img src="images/connory-drawing.jpg" width="600" height="" alt="Illustration of Connie and Greg" border="0" style="width: 100%; max-width: 600px; height: auto; background: #ffffff; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #283429; margin: auto; display: block;" class="g-img">
                     </td>
                 </tr>
@@ -231,27 +231,27 @@
                     <td style="background-color: #ffffff;">
                         <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
-                                <td style="padding: 20px; font-family: 'Andale Mono', 'Courier New', Courier, monospace; font-size: 12px; line-height: 16px; color: #4d4940; text-align: center;">
-                                    <p style="margin: 0;">request the honor of your presence as we exchange marriage vows and celebrate our new life together</p>
+                                <td style="padding: 0 20px; font-family: 'Andale Mono', 'Courier New', Courier, monospace; font-size: 12px; line-height: 16px; color: #4d4940; text-align: center;" class="subtitle">
+                                    <p style="margin: 0;">request the honor of your presence<br> as we exchange marriage vows <br>and celebrate our new life together</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="padding: 20px; text-align: center;">
-                                    <hr />
-                                    <h2 style=" font-family: 'Amatic SC', cursive; color: #283429;">Sunday, September 29, 2019</h2>
-                                    <h3>Ceremony @ 3:00 PM<br>Roberts Park - Oakland, California</h3>
-                                    <h3>Reception @ 5:30 PM<br>Brazilian Room - Berkeley, California</h3>
-                                    <p style="margin: 0;">More information at <a href="http://www.connoryeverafter.com">www.connoryeverafter.com</a></p>
-                                    <hr />
+                                <td style="padding: 0 20px; text-align: center;">
+                                    <hr style="margin: 20px 0;"/>
+                                    <h2 style="font-size: 48px; font-family: 'Amatic SC', cursive; color: #283429;">Sunday, September 29, 2019</h2>
+                                    <h3 style="font-family: 'Andale Mono', 'Courier New', Courier, monospace; color: #4d4940;">Ceremony @ 3:00 PM<br>Roberts Park<span class="hyphen"> - </span>Oakland, California</h3>
+                                    <h3 style="font-family: 'Andale Mono', 'Courier New', Courier, monospace; color: #4d4940;">Reception @ 5:30 PM<br>Brazilian Room<span class="hyphen"> - </span>Berkeley, California</h3>
+                                    <p style="margin: 0; font-family: 'Andale Mono', 'Courier New', Courier, monospace; color: #4d4940;">More information at <a style="text-decoration: underline;" href="http://www.connoryeverafter.com">www.connoryeverafter.com</a></p>
+                                    <hr style="margin: 20px 0;"/>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="padding: 0 20px;">
+                                <td style="padding: 0 20px 20px;">
                                     <!-- Button : BEGIN -->
                                     <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
                                         <tr>
                                             <td class="button-td button-td-primary" style="border-radius: 4px; background: #222222;">
-											     <a class="button-a button-a-primary" href="https://google.com/" style="background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">RSVP by May 15</a>
+											     <a class="button-a button-a-primary" href="https://google.com/" style="background: #222222; border: 1px solid #000000; font-family: 'Andale Mono', 'Courier New', Courier, monospace; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">RSVP by May 15</a>
 											</td>
                                         </tr>
                                     </table>
